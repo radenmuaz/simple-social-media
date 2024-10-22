@@ -43,10 +43,10 @@ Here, assume there is web server `web` with admin username `raden_m_muaz` and wi
 1. Upload to machine
 
 ```
-pwd # make sure you are in this arba_travel
+pwd # make sure you are in this repo
 cd ..
-scp -r arba_travel raden_m_muaz@web:/home/raden_m_muaz
-# gcloud compute scp --recurse arba_travel raden_m_muaz@web:/home/raden_m_muaz
+scp -r simple-social-media raden_m_muaz@web:/home/raden_m_muaz
+# gcloud compute scp --recurse simple-social-media raden_m_muaz@web:/home/raden_m_muaz
 ```
 
 then ssh to the machine
@@ -64,14 +64,14 @@ export UPLOAD_DIR_ROOT=/var/www/html/
 sudo mkdir -p $UPLOAD_DIR_ROOT/static/uploads
 sudo chmod 755 $UPLOAD_DIR_ROOT/static/uploads
 sudo chown raden_m_muaz:raden_m_muaz $UPLOAD_DIR_ROOT/static/uploads
-sudo cp -r ~/arba_travel/frontend_dist/* /var/www/html
+sudo cp -r ~/simple-social-media/frontend_dist/* /var/www/html
 ```
 
 3. Run FastAPI server
 ```
 python3 -m venv ~/arba_venv
 . ~/arba_venv/bin/activate
-cd ~/arba_travel
+cd ~/simple-social-media
 python3 -m pip install -r requirements.txt
 tmux
 export UPLOAD_DIR_ROOT=/var/www/html/
