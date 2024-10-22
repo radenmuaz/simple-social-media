@@ -1,0 +1,22 @@
+{
+  "name": "arba-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@solidjs/router": "^0.14.10",
+    "axios": "^1.7.7",
+    "solid-app-router": "^0.4.2",
+    "solid-js": "^1.9.1",
+    "solid-markdown": "^2.0.13"
+  },
+  "devDependencies": {
+    "vite": "^5.4.8",
+    "vite-plugin-solid": "^2.10.2"
+  }
+}
