@@ -1,14 +1,16 @@
 # simple-social-media
-```
+
 A instagram-like social media app.
 
 ## dev
+```
 
 The `main.py` is FastAPI code, run with `uvicorn main:app` command.
 The `models.py` is `sqlalchemy` database models.
 The `pydantic_models.py` is `pydantic` models.
 The `test.py` is simple test code to dry run all the available api endpoints.
 The `frontend` contains js frontend written in Solid.js .
+```
 Database is created as sqlite `app.db` in first run.
 To reset, simply delete `app.db`.
 
