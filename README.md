@@ -14,8 +14,8 @@ Database is created as sqlite `app.db` in first run.
 To reset, simply delete `app.db`.
 
 ```
-python3 -m venv ~/arba_venv
-. ~/arba_venv/bin/activate
+python3 -m venv ~/server_venv
+. ~/server_venv/bin/activate
 python3 -m pip install -r requirements.txt
 uvicorn main:app --host 0.0.0.0 --port 8000
 
