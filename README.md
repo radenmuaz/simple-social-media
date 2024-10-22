@@ -1,6 +1,6 @@
 # simple-social-media
 
-A instagram-like social media app.
+Instagram-like social media app.
 
 ## dev
 ```
