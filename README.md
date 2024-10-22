@@ -69,8 +69,8 @@ sudo cp -r ~/simple-social-media/frontend_dist/* /var/www/html
 
 3. Run FastAPI server
 ```
-python3 -m venv ~/arba_venv
-. ~/arba_venv/bin/activate
+python3 -m venv ~/server_venv
+. ~/server_venv/bin/activate
 cd ~/simple-social-media
 python3 -m pip install -r requirements.txt
 tmux
