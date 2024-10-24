@@ -40,16 +40,15 @@ In real deployment, something like https cert, domain name, docker and auto-rest
 
 Here, assume there is web server `web` with admin username `raden_m_muaz` and with firewall tcp port 8000 allowed.
 
-0. Edit `frontend/src/config.js`
-Change th IP address to the server.
+0. Edit `frontend/src/config.js`, key in the IP address of machine.
 ```
 const config = {
     API_URL: process.env.NODE_ENV === 'production'
-        ? "http://YOUR_SERVER_IP:8000"
+        ? "http://YOUR_MACHINE_IP:8000"
         : "http://localhost:8000",
     
     IMAGE_URL: process.env.NODE_ENV === 'production'
-        ? "http://YOUR_SEVER_IP:80"
+        ? "http://YOUR_MACHINE_IP:80"
         : "http://localhost:8000",
 };
 
