@@ -48,8 +48,8 @@ if UPLOAD_DIR_ROOT == "./":
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="api/login")
-# origins = ["http://localhost:8000", "http://localhost:5173", "http://localhost:8080", PUBLIC_IP]
-origins = ["*"]
+origins = ["http://localhost:80", "http://localhost:8000", "http://localhost:5173", "http://localhost:8080", PUBLIC_IP]
+# origins = ["*"]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,  # Allow only the frontend to communicate with backend

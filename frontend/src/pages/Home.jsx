@@ -49,11 +49,18 @@ function Home({loggedIn, setLoggedIn, currentUser, setCurrentUser}) {
   
   const fetchPosts = () => {
     axios.get(`${API_URL}/api/post`)
-      .then(response => setPosts(response.data))
-      .catch(() => {
-        localStorage.removeItem("jwt");
-        setLoggedIn(false);
-        setCurrentUser("");
+      .then(response => 
+        {
+        console.log("here");
+        console.log(response.data);
+        setPosts(response.data);
+        console.log("there");
+      })
+      .catch((e) => {
+        console.log("error",e)
+        // localStorage.removeItem("jwt");
+        // setLoggedIn(false);
+        // setCurrentUser("");
       });
   };
 

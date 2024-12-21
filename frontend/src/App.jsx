@@ -22,6 +22,7 @@ function checkAuth(setLoggedIn, setCurrentUser) {
       setCurrentUser(response.data.username);
   })
     .catch(() => {
+      console.log(response.data)
       setLoggedIn(false);
       setCurrentUser("");
     });

@@ -50,7 +50,7 @@ function Post({ post, fetchPosts, currentUser, loggedIn }) {
 
   return (
     <div class="post">
-      <p><strong>{comment.author.username}</strong></p>
+      <p><strong>{post.author.username}</strong></p>
       {isEditing() ? (
         <div>
           <input
