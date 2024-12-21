@@ -37,7 +37,7 @@ ACCESS_TOKEN_EXPIRE_MINUTES = 30
 UPLOAD_DIR = "static/uploads"
 UPLOAD_DIR_ROOT = os.environ.get("UPLOAD_DIR_ROOT", "./")
 
-PUBLIC_IP = os.environ.get("PUBLIC_IP", "http://34.70.213.118")
+PUBLIC_IP = os.environ.get("PUBLIC_IP", "http://35.184.43.116/")
 Base.metadata.create_all(bind=engine)
 app = FastAPI()
 api_router = APIRouter()
